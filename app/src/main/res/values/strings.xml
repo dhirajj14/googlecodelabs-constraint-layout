@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Constraint Layout</string>
     <string name="place_holder">background image</string>
+    <string name="upload_button">Upload</string>
+    <string name="discard_button">Discard</string>
 </resources>
