@@ -2,7 +2,7 @@
 
 This is a completed repo for google code lab - Constraint Layout
 
-<p align="center><img src="https://user-images.githubusercontent.com/54300222/87256106-8fad8780-c455-11ea-8b63-1792fd3fad1b.gif" height="400px"/></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/54300222/87256106-8fad8780-c455-11ea-8b63-1792fd3fad1b.gif" height="400px"/></p>
 
 ## WhatI have learned in this code lab
 * Automatically constrain UI elements to the layout.
