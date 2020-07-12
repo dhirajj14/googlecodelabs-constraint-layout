@@ -50,57 +50,92 @@
         android:id="@+id/cameraLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:text="@string/camera"
         app:layout_constraintBaseline_toBaselineOf="@+id/cameraType"
-        tools:layout_editor_absoluteX="8dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/cameraType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="18dp"
+        android:autofillHints=""
         android:ems="10"
+        android:hint="@string/camera_hint"
         android:inputType="textPersonName"
         android:text="@string/camera_value"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="185dp" />
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
         android:id="@+id/settings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:autofillHints=""
         android:ems="10"
+        android:hint="@string/settings_hint"
         android:inputType="textPersonName"
         android:text="@string/settings_value"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="248dp" />
+        app:layout_constraintStart_toStartOf="@+id/cameraType"
+        app:layout_constraintTop_toBottomOf="@+id/cameraType" />
 
     <TextView
         android:id="@+id/settings_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:text="@string/settings"
         app:layout_constraintBaseline_toBaselineOf="@+id/settings"
-        tools:layout_editor_absoluteX="8dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
         android:shadowColor="@android:color/black"
         android:shadowDx="1"
         android:shadowDy="1"
         android:shadowRadius="2"
         android:text="@string/image_header"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="14dp"
-        tools:layout_editor_absoluteY="143dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="29dp"
         android:layout_height="33dp"
-        app:srcCompat="@drawable/fav"
-        tools:layout_editor_absoluteX="366dp"
-        tools:layout_editor_absoluteY="110dp" />
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:contentDescription="@string/fav_image_description"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/fav" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/image_description"
+        app:layout_constraintBottom_toTopOf="@+id/button_discard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

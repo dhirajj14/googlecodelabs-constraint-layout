@@ -8,4 +8,8 @@
     <string name="settings_value">f/4 16s ISO 200</string>
     <string name="settings">Settings</string>
     <string name="image_header">Nature</string>
+    <string name="image_description">This is info</string>
+    <string name="fav_image_description">Make image fav</string>
+    <string name="settings_hint">Model Settings</string>
+    <string name="camera_hint">Model Number</string>
 </resources>
